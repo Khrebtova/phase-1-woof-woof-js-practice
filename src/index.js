@@ -75,8 +75,8 @@ function handleFilter(filterBtn){
     if (filterBtn.textContent === 'Filter good dogs: OFF'){
         
         filterBtn.textContent = 'Filter good dogs: ON'
-        let badDogs = dogsArray.filter(dog => dog.isGoodDog === false)
-        addDogsToBar(badDogs)
+        let goodDogs = dogsArray.filter(dog => dog.isGoodDog === true)
+        addDogsToBar(goodDogs)
     } 
     else {
         filterBtn.textContent = 'Filter good dogs: OFF'
